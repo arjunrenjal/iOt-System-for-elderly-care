@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>IOT System For Elderly Care</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">IoT Mini Project</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Components</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Working</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Code And Demo</a>
+                    </li>
+                    <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">IOT System <br> For Elderly Care</h1>
+                    <p class="home__description">An IoT system for elderly care supported by advanced sensors is essential for enhancing health outcomes ensuring safety, promoting independence, and providing valuable support to caregivers...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section container" id="about">
+            <h1 class="home__title">Components Used<br> For Creating The IoT System</h1>
+            <div class="about__container grid">
+                <div class="about__data">
+                    <h2 class="section__title-center">NodeMCU ESP32</h2>
+                    <p class="about__description">The NodeMCU ESP32 is an ideal platform for developing IoT solutions tailored to elderly care...</p>
+                </div>
+                <img src="assets/img/mcu.png" alt="NodeMCU ESP32 Image">
+            </div>
+        </section>
+
+        <section class="security section container">
+            <div class="security__container grid">
+                <img src="assets/img/mcu2.png" alt="MPU6050 Image">
+                <div class="security__data">
+                    <h2 class="section__title-center">MPU6050</h2>
+                    <p class="security__description">The MPU6050 is a popular motion-tracking device containing a gyroscope and an accelerometer...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="security section container">
+            <div class="security__container grid">
+                <div class="security__data">
+                    <h2 class="section__title-center">MQ135</h2>
+                    <p class="security__description">The MQ135 gas sensor, when integrated with a microcontroller like the NodeMCU ESP32, becomes a valuable tool for developing IoT systems related to elderly care...</p>
+                </div>
+                <img src="assets/img/air.png" alt="MQ135 Image" style="max-width: 70%; height: auto;">
+            </div>
+        </section>
+
+        <section class="security section container">
+            <div class="security__container grid">
+                <img src="assets/img/art3.png" alt="Heart Beat Pulse Sensor Image" style="max-width: 50%; height: auto;">
+                <div class="security__data">
+                    <h2 class="section__title-center">Heart Beat Pulse Sensor</h2>
+                    <p class="security__description">A heart rate pulse sensor with NodeMCU32S is a vital component in an IoT system designed for elderly care...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section container" id="services">
+            <h2 class="section__title">How does <br> it work?</h2>
+            <div class="services__container grid">
+                <div class="services__data">
+                    <h3 class="services__subtitle">Data Acquisition and Sensor Monitoring</h3>
+                    <img src="assets/img/data.png" alt="MQ135 Image" >
+                    <p class="services__description">The system collects real-time data from multiple sensors, including the MPU6050 for motion detection, the MQ135 for air quality monitoring, and a heart rate pulse sensor for health tracking...</p>
+                </div>
+                <div class="services__data">
+                    <h3 class="services__subtitle">Data Processing and Communication</h3>
+                    <img src="assets/img/think.png" alt="MQ135 Image" >
+                    <p class="services__description">The ESP32 processes the raw sensor data, applying algorithms to interpret the information. It analyzes data from the MPU6050 to detect falls or irregular movements...</p>
+                </div>
+                <div class="services__data">
+                    <h3 class="services__subtitle">Monitoring and<br> Alerts</h3>
+                    <img src="assets/img/alrt.png" alt="MQ135 Image" >
+                    <p class="services__description">A user interface collects data from sensors like MPU6050 for motion, MQ135 for air quality, and a heart rate sensor linked to the ESP32 microcontroller...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__content">
+                    <h2 class="section__title-center">Code </h2>
+                    <p class="contact__description">Paste code here</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="app section container">
+        <div class="app__container grid">
+            <div class="app__data">
+                <h2 class="section__title-center">Demonstration </h2>
+                <p class="app__description">With our app </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Project Name</a>
+                <p class="footer__description">IoT system<br> For Elderly Care</p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Members</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Arjun Renjal </a></li>
+                    <li><a href="#" class="footer__link">Abhijeeth Hegde</a></li>
+                    <li><a href="#" class="footer__link">Abhishek</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Roll No.</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">4NM21IS026</a></li>
+                    <li><a href="#" class="footer__link">4NM21IS002</a></li>
+                    <li><a href="#" class="footer__link">4NM21IS004</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
