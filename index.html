@@ -52,6 +52,7 @@
 Imagine it as a real-time health wizard. It constantly keeps an eye on the elderly, sending updates to a remote control center. Now, if anything seems off, it's not just brushed aside. Instead, timely alerts are sent to caregivers. Whether it's a little stumble, a change in air quality, or a flutter in the heart rate, this system has got it covered. <br><br>
 
 
+
 What makes it stand out is its simplicity. No complex jargon, just a seamless blend of technology and care. This isn't just about gadgets; it's about redefining how we look after our elders. With this system, we're not just monitoring health; we're fostering a new level of caregiving that's proactive, responsive, and, most importantly, caring. Welcome to the future of elderly care - where technology meets compassion.
                         
                         </p>
@@ -127,10 +128,11 @@ What makes it stand out is its simplicity. No complex jargon, just a seamless bl
                     <h3 class="services__subtitle">Monitoring and<br> Alerts</h3>
                     <img src="assets/img/alrt.png" alt="MQ135 Image" >
                     <p class="services__description"> A user interface collects data from sensors like MPU6050 for motion, MQ135 for air quality, and a heart rate sensor linked to the ESP32 microcontroller. It offers comprehensive visualization and issues timely alerts to caregivers, ensuring swift responses to potential health issues.</p>
-                </div>
+               </div>
+             
             </div>
         </section>
-
+       
 
 
         <!-- CONTACT US -->
@@ -138,10 +140,47 @@ What makes it stand out is its simplicity. No complex jargon, just a seamless bl
             <div class="contact__container grid">
                 <div class="contact__content">
                     <h2 class="section__title-center">Code </h2>
-                    <p class="contact__description">Paste code here</p>
+
+                    <img src="assets/img/code.png" alt="MQ135 Image" style="max-width: 240%; height: auto;">
                 </div>
 
             </div>
+            <p class="contact__information">The provided Arduino sketch is a program designed for an ESP32 microcontroller with various sensors to monitor environmental conditions and detect potential incidents, such as gas leaks and falls. <br><br>
+
+                <b>Libraries and Dependencies:</b><br><br>
+
+                The code includes several libraries necessary for the project, such as WiFi for internet connectivity, Blynk for IoT integration, and libraries for interfacing with sensors like the MPU6050 accelerometer.
+                <br><br><b>Initialization:</b>
+                <br><br>
+                The Blynk authentication token, WiFi credentials, and the MPU6050 sensor object are initialized.
+                Serial communication is set up for debugging purposes.<br><br>
+                <b>Blynk Setup:</b><br><br>
+                
+                The program establishes a connection to the Blynk server using the provided authentication token and WiFi credentials. This enables remote monitoring and control of the device through the Blynk mobile app.
+                <br><br>  <b>Sensor Readings:</b><br><br>
+                
+                Accelerometer data from the MPU6050 sensor is read, and the z-axis acceleration value is sent to Blynk for monitoring.
+                Analog values from a gas sensor and a heart rate sensor are read and transmitted to Blynk.
+                <br><br><b>Gas Sensor Handling:</b><br><br>
+                
+                Gas sensor readings are analyzed to determine the environmental conditions.
+                If the average gas sensor value is above a certain threshold (3500), it indicates a dangerous situation, and a corresponding message is sent to Blynk.
+                If the average value is between 3000 and 3500, a different message is sent to Blynk.
+                If the average value is below 3000, it signifies a safe condition.
+                <br><br><b>Heart Rate Sensor Handling:</b> <br><br>
+                
+                The code calculates the heart rate in beats per minute based on the analog reading from the heart rate sensor and sends it to Blynk.
+                <br><br><b>Fall Detection:</b><br><br>
+                
+                The program includes fall detection logic using the MPU6050 accelerometer.
+                If a fall is detected (a sudden change in z-axis acceleration), a notification is sent to Blynk, and a visual indicator is set.
+                After a specified time without detecting a fall (10 seconds), the visual indicator is turned off.
+                Delay and Blynk Run:
+                
+                The loop includes a delay of 2000 milliseconds (2 seconds) to control the frequency of sensor readings.
+                The Blynk.run() function is called to handle Blynk-related tasks.    
+
+            </p>
         </section>
     </main>
 
@@ -150,8 +189,8 @@ What makes it stand out is its simplicity. No complex jargon, just a seamless bl
                 <div class="app__container grid">
                     <div class="app__data">
                         <h2 class="section__title-center">Demonstration </h2>
-                        <p class="app__description">With our app </p>
-    
+                        
+                        <iframe width="950" height="630" src="https://www.youtube.com/embed/7lC3HSFmF-o?si=IvWIp7p0gismDoze"  allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
